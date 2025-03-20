@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css';
 
 export default function LandingPage() {
@@ -13,12 +14,14 @@ export default function LandingPage() {
         {/* Right Container */}
         <div className="right-container d-flex flex-column justify-content-center align-items-center w-100 w-md-50 p-3 text-center">
           <h2 className="product-title">AstroMitra AI</h2>
-          <p className="product-description text-muted">AstroMitra is an AI-powered astrology chatbot providing accurate horoscope predictions, numerology insights, and Lal Kitab remedies for career, relationships, and wealth. Get instant personalized astrology guidance anytime! 🚀🔮</p>
+          <p className="product-description text-muted">
+            AstroMitra is an AI-powered astrology chatbot providing accurate horoscope predictions, numerology insights, and Lal Kitab remedies for career, relationships, and wealth. Get instant personalized astrology guidance anytime! 🚀🔮
+          </p>
           
           <div className="buttons d-flex flex-column flex-sm-row gap-3">
-            <button type="button" className="btn btn-success">
+            <Link to="/ai" className="btn btn-success">
               <i className="fa-solid fa-earth-americas"></i>&nbsp;Continue on Web
-            </button>
+            </Link>
             <button type="button" className="btn btn-dark">
               <i className="fa-brands fa-android"></i>&nbsp;Android App
             </button>
@@ -26,5 +29,5 @@ export default function LandingPage() {
         </div>
       </div>
     </div>
-  )
+  );
 }
