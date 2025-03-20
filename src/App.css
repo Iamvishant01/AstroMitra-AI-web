@@ -57,6 +57,25 @@ body {
   color: #555;
   margin-top: 10px;
 }
+.features-container {
+  padding: 3%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px; /* Ensures the container doesn't stretch too much */
+  margin: auto;
+}
+
+.features-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Auto-adjusts column count */
+  gap: 20px; /* Adds spacing between cards */
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
 
 
 /* Media Query for larger devices */
@@ -98,7 +117,10 @@ body {
   .product-description {
     font-size: 16px;
   }
-
+  .features-main {
+    grid-template-columns: repeat(2, minmax(150px, 1fr)); /* 2 columns for medium screens */
+    padding: 5%;
+  }
 }
 
 /* Media Query for extra small devices */
@@ -109,5 +131,9 @@ body {
 
   .product-description {
     font-size: 14px;
+  }
+  .features-main {
+    grid-template-columns: repeat(1, 1fr); /* Stacks cards in 1 column on small screens */
+    padding: 5%;
   }
 }
