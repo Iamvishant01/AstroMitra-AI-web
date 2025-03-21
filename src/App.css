@@ -137,6 +137,101 @@ body {
   text-align: center;
   min-width: 50%;
 }
+/* Footer */
+.footer {
+  background-color: #d3d3d3;
+  display: flex;
+  border-radius: 5px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 2%;
+  margin: 2%;
+  height: auto;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+  text-align: left;
+}
+
+.footer-col a {
+  text-decoration: none;
+  color: black;
+  text-align: left;
+  transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+.footer-col a:hover {
+  color: #0A58CA;
+}
+
+#posts-footer {
+  padding: 0.5%;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+}
+
+#footer-heading {
+  font-family: "Lexend", sans-serif;
+  font-size: 22px;
+  text-align: left;
+}
+
+.footer-col a i {
+  width: 32px;
+  font-size: 24px;
+}
+
+#kothrud-map {
+  width: 95%;
+  height: 100%;
+}
+.output{
+  margin-bottom: 10%;
+}
+
+/* Mobile and Small Devices */
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 32px;
+  }
+
+  .footer-col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #write2 {
+    font-size: 12px;
+  }
+
+  #write2 p {
+    font-size: 17px;
+    padding: 2%;
+  }
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 5%;
+  }
+
+  .footer-col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {

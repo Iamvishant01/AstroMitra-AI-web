@@ -4,6 +4,7 @@ import Features from './Components/Features';
 import LandingPage from './Components/LandingPage';
 import Navbar from './Components/Navbar';
 import Ai from './Components/Ai';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<><LandingPage /><Features /></>} />
           <Route path="/ai" element={<Ai/>} />
         </Routes>
+        <Footer/>
       </>
     </Router>
     </>
