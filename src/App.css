@@ -76,8 +76,102 @@ body {
   align-items: center;
   padding: 10px;
 }
+.mitra-container {
+  padding: 3%;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
 
+.question-container {
+  background-color: #ffffff;
+  color: #062547;
+  padding: 2%;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
+.question-container p span {
+  font-family: "Lexend", sans-serif;
+  font-size: 25px;
+}
+
+.question-container p {
+  font-family: "Poppins", sans-serif;
+  font-size: 19px;
+}
+
+.Inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Ensure output container matches mitra-container */
+.output {
+  width: 100%;
+  max-width: 1200px; /* Match mitra-container */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100%; /* Ensure it fills output */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 3%;
+  background: #fff;
+}
+
+/* Make sure left and right containers fit inside */
+.left-container,
+.right-container {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  min-width: 50%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Inputs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Inputs .MuiTextField-root,
+  .Inputs .MuiOutlinedInput-root,
+  .Inputs .MuiInputBase-root,
+  .Inputs button {
+    width: 100%;
+  }
+
+  .question-container {
+    padding: 5%;
+  }
+
+  .question-container p span {
+    font-size: 20px;
+  }
+
+  .question-container p {
+    font-size: 16px;
+  }
+
+  .product-container {
+    flex-direction: column;
+  }
+
+  .left-container, .right-container {
+    min-width: 100%;
+  }
+}
 /* Media Query for larger devices */
 @media (min-width: 768px) {
   .product-container {
