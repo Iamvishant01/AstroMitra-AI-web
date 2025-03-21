@@ -193,6 +193,20 @@ body {
   margin-bottom: 10%;
 }
 
+.left-container {
+  text-align: left;  /* Align text to the left */
+  word-wrap: break-word;  /* Break long words if necessary */
+  overflow-wrap: break-word; /* Ensures long words wrap properly */
+  width: 100%; /* Ensure it takes full width */
+}
+
+.left-container div[dangerouslySetInnerHTML] {
+  width: 100%;
+  font-size: 16px;
+  white-space: pre-line; /* Maintain line breaks */
+}
+
+
 /* Mobile and Small Devices */
 @media screen and (max-width: 768px) {
   .footer {
