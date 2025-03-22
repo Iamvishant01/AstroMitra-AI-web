@@ -22,9 +22,7 @@ export default function LandingPage() {
             <Link to="/ai" className="btn btn-success">
               <i className="fa-solid fa-earth-americas"></i>&nbsp;Continue on Web
             </Link>
-            <button type="button" className="btn btn-dark">
-              <i className="fa-brands fa-android"></i>&nbsp;Android App
-            </button>
+            <a href="https://drive.google.com/file/d/1X0OeDogN_igqkxEW9i_YERm1ZX2c-JK3/view?usp=sharing" target='about_blank'><button type="button" class="btn btn-dark"><i class="fa-brands fa-android"></i>&nbsp;Android App</button></a>
           </div>
         </div>
       </div>

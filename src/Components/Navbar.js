@@ -35,7 +35,7 @@ export default function Navbar() {
                 <div className="buttons d-flex gap-2">
                     <a href="https://linktr.ee/iamvishant02" target='about_blank'><button type="button" class="btn btn-primary"><i class="fa-solid fa-code"></i>&nbsp;Developers</button></a>
                     <a href="https://github.com/Iamvishant01/AstroMitra-AI-web" target='about_blank'><button type="button" class="btn btn-warning"><i class="fa-brands fa-github"></i>&nbsp;Source Code</button></a>
-                    <button type="button" class="btn btn-dark"><i class="fa-brands fa-android"></i>&nbsp;Android App</button>
+                    <a href="https://drive.google.com/file/d/1X0OeDogN_igqkxEW9i_YERm1ZX2c-JK3/view?usp=sharing" target='about_blank'><button type="button" class="btn btn-dark"><i class="fa-brands fa-android"></i>&nbsp;Android App</button></a>
                 </div>
                 </div>
             </div>

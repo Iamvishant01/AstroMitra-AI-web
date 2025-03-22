@@ -191,11 +191,11 @@ body {
 }
 .output{
   margin-bottom: 10%;
+  padding: 2%;
 }
 
 .left-container {
   text-align: left;  /* Align text to the left */
-  word-wrap: break-word;  /* Break long words if necessary */
   overflow-wrap: break-word; /* Ensures long words wrap properly */
   width: 100%; /* Ensure it takes full width */
 }
@@ -228,6 +228,11 @@ body {
   #write2 p {
     font-size: 17px;
     padding: 2%;
+  }
+  .left-container {
+    text-align: center;  /* Align text to the left */
+    overflow-wrap: break-word; /* Ensures long words wrap properly */
+    width: 100%; /* Ensure it takes full width */
   }
 }
 
