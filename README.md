@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# 🌟 AstroMitraAI - Your Personalized Astrology Companion 🔮
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![AstroMitraAI Banner](https://private-user-images.githubusercontent.com/112625850/408633785-83280b25-572e-4edc-8a3b-9a76a6a3728a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDI2MTQyMzYsIm5iZiI6MTc0MjYxMzkzNiwicGF0aCI6Ii8xMTI2MjU4NTAvNDA4NjMzNzg1LTgzMjgwYjI1LTU3MmUtNGVkYy04YTNiLTlhNzZhNmEzNzI4YS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMyMlQwMzI1MzZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04YTE0MjA3OWEyNGEyOTU5ZDMyZmViMjU2YzgzYzY2OWVmZGRjMDk4YjVhYmY0MDYxMzExODJiMjcyMmI1ZDE5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.1WsUO3xWjhUYAPd_hXp33QqzomPO2ZW7tHzOm6unwKI)  
+_AstroMitraAI brings the power of astrology, numerology, and Lal Kitab into a smart AI-powered chatbot, providing personalized predictions on career, relationships, wealth, and health._
 
-## Available Scripts
+## 🚀 Features
+- 🏆 **AI-Powered Astrology Predictions** – Get insights based on Vedic astrology principles.
+- 🔢 **Numerology Insights** – Explore how numbers influence your life.
+- 📖 **Lal Kitab Remedies** – Discover powerful remedies for different life challenges.
+- 💼 **Career, Love & Finance Forecasts** – Personalized guidance on crucial life aspects.
+- 🧠 **Smart AI Responses** – Engaging and informative chatbot experience.
+- 🎨 **User-Friendly Interface** – A seamless, intuitive chat experience for all users.
 
-In the project directory, you can run:
+## 🖥️ Tech Stack
+- **Frontend:** React.js
+- **Backend:** Node.js, Express.js
+- **AI Engine:** Gemini API
+- **Database:** MongoDB
+- **Hosting:** Vercel / Firebase
 
-### `npm start`
+## 🔥 Getting Started
+Follow these steps to set up AstroMitraAI locally:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
+- Node.js & npm installed
+- MongoDB (if running locally)
+- API key for Gemini AI
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation
+```sh
+# Clone the repository
+git clone https://github.com/VishantNetke/AstroMitraAI.git
+cd AstroMitraAI
 
-### `npm test`
+# Install dependencies
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Configuration
+Create a `.env` file in the root directory and add:
+```
+GEMINI_API_KEY=your_api_key
+MONGO_URI=your_mongodb_connection
+PORT=5000
+```
 
-### `npm run build`
+### Run the Application
+```sh
+npm start
+```
+_The app will be available at `http://localhost:5000`._
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🌍 Live Demo
+[🚀 Try AstroMitraAI Now](https://astromitrai.vercel.app/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📸 Screenshots
+| Home Screen | Chatbot Interface |
+|------------|------------------|
+| ![Home](https://astromitrai.vercel.app/) | ![Chatbot](https://astromitrai.vercel.app/ai) |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🎯 Roadmap
+- [ ] Add Horoscope Feature
+- [ ] Voice Input Support
+- [ ] Advanced Kundali Analysis
+- [ ] Mobile App Version
 
-### `npm run eject`
+## 🤝 Contributing
+Contributions are welcome! Feel free to fork, create issues, or submit pull requests.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Steps to Contribute
+1. Fork the repository
+2. Create a new branch (`feature-xyz`)
+3. Commit your changes
+4. Push to your branch and create a PR
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📄 License
+This project is licensed under the **MIT License**.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 💬 Connect with Me
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-VishantNetke-blue?style=flat&logo=linkedin)](https://linkedin.com/in/vishant-netke)  
+[![Twitter](https://img.shields.io/badge/Twitter-VishantNetke-blue?style=flat&logo=twitter)](https://twitter.com/VishantNetke)  
+[![YouTube](https://img.shields.io/badge/YouTube-VishantNetke-red?style=flat&logo=youtube)](https://youtube.com/@VishantNetke)  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+🚀 _Empower your life with AstroMitraAI!_ 🔮
