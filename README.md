@@ -73,8 +73,7 @@ Contributions are welcome! Feel free to fork, create issues, or submit pull requ
 This project is licensed under the **MIT License**.
 
 ## 💬 Connect with Me
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-VishantNetke-blue?style=flat&logo=linkedin)](https://linkedin.com/in/vishant-netke)  
-[![Twitter](https://img.shields.io/badge/Twitter-VishantNetke-blue?style=flat&logo=twitter)](https://twitter.com/VishantNetke)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-VishantNetke-blue?style=flat&logo=linkedin)](https://linkedin.com/in/iamvishant01)  
 [![YouTube](https://img.shields.io/badge/YouTube-VishantNetke-red?style=flat&logo=youtube)](https://youtube.com/@VishantNetke)  
 
 ---
