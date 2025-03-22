@@ -3,7 +3,9 @@ import TextField from '@mui/material/TextField';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-import { PDFDocument } from 'pdf-lib';  // Using pdf-lib for PDF text extraction
+import { PDFDocument,rgb } from 'pdf-lib';  // Using pdf-lib for PDF text extraction
+import { saveAs } from 'file-saver';
+
 
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 
@@ -42,6 +44,22 @@ export default function AstroMitraAI() {
     } catch (error) {
       console.error('Error extracting text from PDF:', error);
     }
+  };
+  // save pdf
+  const downloadPDF = async () => {
+    const pdfDoc = await PDFDocument.create();
+    const page = pdfDoc.addPage([600, 800]);
+    const { width, height } = page.getSize();
+    const fontSize = 16;
+
+    page.drawText('AstroMitra AI', { x: 50, y: height - 50, size: 24, color: rgb(0, 0, 1) });
+    page.drawText('Website: astromitrai.vercel.app', { x: 50, y: height - 80, size: 12, color: rgb(0, 0, 1) });
+    page.drawText(`Prediction for ${firstName} ${lastName}:`, { x: 50, y: height - 120, size: fontSize });
+    page.drawText(englishResponse.replace(/<br\/><br\/>/g, '\n'), { x: 50, y: height - 150, size: fontSize });
+
+    const pdfBytes = await pdfDoc.save();
+    const blob = new Blob([pdfBytes], { type: 'application/pdf' });
+    saveAs(blob, `${firstName}_${lastName}_AstroMitra-AI.pdf`);
   };
 
   // Call extractTextFromPdf when the component is mounted
@@ -192,7 +210,9 @@ export default function AstroMitraAI() {
             {loading ? (
               <p>Loading...</p>
             ) : englishResponse ? (
-              <div dangerouslySetInnerHTML={{ __html: englishResponse }}></div>
+              <><div dangerouslySetInnerHTML={{ __html: englishResponse }}></div>
+              {/* <button className="btn btn-success mt-3" onClick={downloadPDF}>Download as PDF</button> */}
+              </>
             ) : (
               <p>🔮 Enter your details and let the stars reveal their secrets! Click the button to uncover your cosmic insights. ✨</p>
             )}
