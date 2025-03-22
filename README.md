@@ -29,7 +29,7 @@ Follow these steps to set up AstroMitraAI locally:
 ### Installation
 ```sh
 # Clone the repository
-git clone https://github.com/VishantNetke/AstroMitraAI.git
+git clone https://github.com/Iamvishant01/AstroMitra-AI-web.git
 cd AstroMitraAI
 
 # Install dependencies
